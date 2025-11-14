@@ -1,0 +1,112 @@
+h1 {
+  border: 1px solid black;
+  width: 200px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+h1:hover {
+  /* margin-left: 200px;
+    transition: margin-left 1s; */
+
+  /* width: 500px;
+    transition: width 5s; */
+
+  color: red;
+  transition: color 1s;
+}
+
+#outer {
+  border: 1px solid black;
+  width: 30%;
+  height: 40px;
+
+  #inner {
+    width: 1%;
+    height: 40px;
+    background-color: red;
+  }
+}
+
+#outer:hover {
+  #inner {
+    width: 100%;
+    background-color: green;
+    transition: width 5s ease-in-out, background-color 5s ease-in-out;
+  }
+}
+
+#outer1 {
+  border: 1px solid black;
+  width: 30%;
+  height: 40px;
+
+  #inner1 {
+    height: 40px;
+  }
+}
+
+#outer1:hover {
+  #inner1 {
+    animation: myAnimation 5s linear;
+  }
+}
+
+@keyframes myAnimation {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+
+  50% {
+    width: 50%;
+    background-color: yellow;
+  }
+
+  100% {
+    width: 100%;
+    background-color: green;
+  }
+}
+
+#boxMove {
+  position: absolute;
+  animation: boxAnimation 5s linear infinite;
+}
+
+@keyframes boxAnimation {
+  0% {
+    top: 200px;
+    left: 0px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+  }
+
+  25% {
+    top: 200px;
+    left: 500px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+  }
+
+  50% {
+    top: 700px;
+    left: 500px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+  }
+
+  75% {
+    top: 700px;
+    left: 0px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+  }
+
+  100% {
+    top: 200px;
+    left: 0px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+  }
+}
