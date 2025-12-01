@@ -1,0 +1,13 @@
+#content{
+    height: 91vh;
+}
+
+#image{
+    max-width: 900px;
+    max-width: 600px;
+}
+
+#headerr {
+    background: linear-gradient(45deg, #022F40, #38AECC);
+    text-shadow: 2px 2px 4px black
+}
