@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bg-primary">
+      <h1 class="text-white text-center py-3">Dice Game</h1>
+    </nav>
+    <div class="d-flex gap-5 py-3 my-5 justify-content-center">
+      <div class="border border-3 w-25 text-center py-3 shadow-lg rounded-3">
+        <h1>Player 1</h1>
+        <img src="./1.png" alt="img" width="80px" height="80px" id="p1Dice" />
+        <br />
+        <button
+          id="rollDice1"
+          class="btn btn-primary my-2"
+          disabled
+          onclick="p1Roll()"
+        >
+          Roll Dice
+        </button>
+      </div>
+
+      <div class="border border-3 shadow-lg w-25 text-center py-3 rounded-3">
+        <h1>Player 2</h1>
+        <img src="./1.png" alt="img" width="80px" height="80px" id="p2Dice"/>
+        <br />
+        <button
+          id="rollDice2"
+          class="btn btn-primary my-2"
+          disabled
+          onclick="p2Roll()"
+        >
+          Roll Dice
+        </button>
+      </div>
+    </div>
+
+    <h2 class="text-center fw-bolder">Score Board</h2>
+    <div class="d-flex gap-5 justify-content-center my-4">
+      <div class="mx-5 px-5">
+        <span><b>Player 1</b></span> <br />
+        <span id="p1sc">0</span>
+      </div>
+
+      <div class="mx-5 px-5">
+        <span><b>Player 2</b></span
+        ><br />
+        <span id="p2sc">0</span>
+      </div>
+    </div>
+
+    <div class="d-flex gap-5 justify-content-center">
+      <div>
+        <button id="start" class="btn btn-success" onclick="start()">
+          Start Game
+        </button>
+      </div>
+      <div>
+        <button
+          id="restart"
+          class="btn btn-danger"
+          disabled
+          onclick="restart()"
+        >
+          Restart Game
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
