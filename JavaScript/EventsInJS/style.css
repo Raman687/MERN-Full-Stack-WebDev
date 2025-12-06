@@ -25,3 +25,53 @@ button{
 .on{
     background-color: yellow;
 }
+
+
+#rainbowBulb{
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+#colorPallet{
+    display: flex;
+    gap: 10px;
+}
+
+.color{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#c1 {
+    background: violet;
+}
+
+#c2 {
+    background: indigo;
+}
+
+#c3 {
+    background: blue;
+}
+
+#c4 {
+    background: green;
+}
+
+#c5 {
+    background: yellow;
+}
+
+#c6 {
+    background: orange;
+}
+
+#c7 {
+    background: red;
+}
