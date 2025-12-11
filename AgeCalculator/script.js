@@ -15,4 +15,7 @@ function calculate() {
     }
 
     document.getElementById("result").innerText = `Your Age is: ${age} Years`;
+
+    document.getElementById("dob").value = "";
+    document.getElementById("cd").value = "";
 }
