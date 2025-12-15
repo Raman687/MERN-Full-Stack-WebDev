@@ -17,6 +17,14 @@
   cursor: pointer;
 }
 
+.forChange:hover{
+  background-color: rgb(117, 227, 100);
+  span{
+    color: black;
+  }
+}
+
+
 #contact {
   justify-content: center;
   align-items: center;
@@ -30,23 +38,29 @@
   grid-template-columns: auto auto auto;
   gap: 50px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .subDiv {
   background-color: black;
   color: white;
   border: 1px solid grey;
-  width: 400px;
+  width: 380px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 8px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   p {
     color: gray;
     font-size: large;
   }
+}
+
+.subDiv:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 #hero{
@@ -76,11 +90,11 @@
   height: 42px;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #9bc5e6 !important;
+  border-bottom: 2px solid black !important;
   font-size: 16px;
   padding: 6px 0;
   outline: none;
-  color: #9bc5e6;
+  color: black;
 }
 
 textarea.contact-input {
@@ -90,7 +104,6 @@ textarea.contact-input {
 
 #contactFormBlock > label,
 #contactFormBlock .w-50 label {
-  color: #9bc5e6;
   font-weight: 600;
 }
 
